@@ -1,0 +1,149 @@
+body{
+  background-color: white;
+  margin:0;
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* Headings */
+
+h1{
+  color:white;
+  font-size:xx-large;
+}
+
+h2{
+  color:white;
+}
+
+h3{
+  color:white;
+}
+
+h5{
+  color:white;
+}
+
+/* Paragraph */
+
+p{
+  color:black;
+  padding:20px;
+}
+
+/* Links */
+
+a:link{
+  color:green;
+  text-decoration:none;
+}
+
+a:visited{
+  color:white;
+}
+
+a:hover{
+  color:red;
+  text-decoration:underline;
+}
+
+a:active{
+  color:yellow;
+}
+
+/* Header table */
+
+table{
+  background:rgb(2,0,13);
+}
+
+/* Images */
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* ======================
+   NAVIGATION BAR
+   ====================== */
+
+.topnav{
+  overflow:hidden;
+  background-color:black;
+}
+
+.topnav a{
+  float:right;
+  display:block;
+  color:white;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+.topnav a:hover{
+  background-color:red;
+  color:white;
+}
+
+/* ======================
+   FOOTER
+   ====================== */
+
+.simple-footer{
+  background-color:black;
+  text-align:center;
+  padding:20px;
+  border-top:1px solid white;
+  color:#666;
+  font-family:sans-serif;
+}
+
+.simple-footer nav{
+  margin-top:10px;
+}
+
+.simple-footer a{
+  margin:0 10px;
+  color:white;
+  text-decoration:none;
+}
+
+.simple-footer a:hover{
+  text-decoration:underline;
+  color:blue;
+}
+
+/* ======================
+   COLUMNS
+   ====================== */
+
+.column{
+  float:left;
+  width:100%;
+}
+
+.row::after{
+  content:"";
+  display:table;
+  clear:both;
+}
+
+/* ======================
+   MOBILE RESPONSIVE
+   ====================== */
+
+@media screen and (max-width:600px){
+
+.topnav a{
+  float:none;
+  width:100%;
+  text-align:left;
+}
+
+.column{
+  width:100%;
+}
+
+}
